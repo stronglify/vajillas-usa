@@ -274,7 +274,17 @@
 </footer>
 
 <script>
+    // Seleccionar el header
+    const header = document.getElementById('header');
 
+    // Agregar un evento de scroll
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 0) {
+            header.classList.add('active');
+        } else {
+            header.classList.remove('active');
+        }
+    });
 </script>
 
 </body>
